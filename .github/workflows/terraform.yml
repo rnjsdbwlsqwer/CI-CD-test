@@ -31,6 +31,7 @@ jobs:
       with:
         role-to-assume: arn:aws:iam::461536490333:role/github-actions-oidc-role
         aws-region: ap-northeast-2
+        audience: sts.amazonaws.com
 
 
     # 4. Trivy IaC 스캔 (Terraform 코드에 대한 보안 취약점 탐지)
